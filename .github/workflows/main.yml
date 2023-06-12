@@ -1,0 +1,31 @@
+name: Code Quality Check and Merge
+
+on:
+  push:
+    branches:
+      - vara
+      - saqib
+  pull_request:
+    branches:
+      - vara
+      - saqib
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        title: 'Code quality check passed'
+        token: ${{ secrets.PAT }}
+        commit-message: 'Merge feature branches into main'
+        branch: 'main'
+        body: |
+          Code quality check passed for feature branches:
+          - vara
+          - saqib
