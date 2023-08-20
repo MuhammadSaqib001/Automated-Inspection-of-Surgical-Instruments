@@ -17,6 +17,7 @@ the quality remotely and see quality stats on daily basis
 
 A Machine Vision System along with web interfaces for cloud integrationcapable of fault detection in surgical instruments consisting of a vision unit as a test rig for automated image acquisition , computational unit providing environment for the ML models & image processing algorithms to run .
 
+[https://github.com/MuhammadSaqib001/Automated-Inspection-of-Surgical-Instruments/blob/main/project.png]
 ## 4. Methodology
 
 To solve the problem of automated inspection of surgical equipment we have opted the following ways :-
